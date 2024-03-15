@@ -17,11 +17,11 @@ pipeline {
 		    steps {
 			script {
 			 if ( env.ENVIRONMENT == 'QA' ){
-        	sh 'cp target/parameter.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.79/webapps'
+        	sh 'cp target/parameter.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
         	echo "deployment has been done on QA!"
 			 }
 			else if ( env.ENVIRONMENT == 'UAT' ){
-    		sh 'cp target/parameter.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.79/webapps'
+    		sh 'cp target/parameter.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
     		echo "deployment has been done on UAT!"
 			}
 			
