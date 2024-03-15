@@ -24,8 +24,6 @@ pipeline {
     		sh 'cp target/parameter.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.79/webapps'
     		echo "deployment has been done on UAT!"
 			}
-			echo "deployment has been done!"
-			fi
 			
 			}}}	
 }}
